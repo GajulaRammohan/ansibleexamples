@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  vars:
+   myname: Bala
+  tasks:
+  - name: Printing information
+    debug:
+     msg: "{{myname}}"

@@ -1,0 +1,5 @@
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Create a file
+    file: path=ex1.txt state=touch

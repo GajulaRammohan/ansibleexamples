@@ -1,0 +1,8 @@
+---
+- hosts: mynodes
+  become: true
+  tasks:
+  - name: deploy applications
+    copy: 
+      src: index.html
+      dest: /var/www/html/index.html

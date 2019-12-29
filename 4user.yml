@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Create User
+    user: name=ec2-user password=password123  shell=/bin/bash

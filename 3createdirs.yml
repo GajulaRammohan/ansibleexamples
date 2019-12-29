@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Create multiple directories
+    file: path={{item}} state=directory
+    with_items: 
+     - '/home/ubuntu/gaj/vn1'
+     - '/home/ubuntu/gaj/vn2'
+     - '/home/ubuntu/gaj/vn3'

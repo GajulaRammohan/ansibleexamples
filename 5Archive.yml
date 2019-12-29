@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: archive
+    archive: 
+     path: ex3.txt
+     dest: ex3.zip
+     format: zip
+
+
+
